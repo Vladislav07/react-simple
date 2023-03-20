@@ -6,12 +6,16 @@ autem obcaecati voluptates aperiam illum blanditiis doloremque enim, ut
 quos praesentium.`,
 };
 
+let data=[note, note, note]
+
 class Store {
   getItems() {
-    return [note, note, note];
+    return data;
   }
 
-  addItem(note) {}
+  addItem(note) {
+    data.push(note)
+  }
 
   removeItem(note) {}
 }
